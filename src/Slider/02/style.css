@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    left: 0px;
+    transition: transform 0.5s ease;
+}
+
+.slides > div {
+    width: 25%;
+    height: 300px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
